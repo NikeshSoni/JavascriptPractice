@@ -1,30 +1,35 @@
 
-const person1 = {
-    Fname:"Nikesh",
-    Lname:"Rajbhar",
-    FullName: function (homeTown , country) {
-        return console.log(this.Fname , homeTown , country, 'hi');
+const person = {
+    name:'rahul',
+    lastname:'shah',
+    Fullname: function (homeTown , city) {
+        return console.log(this.name , this.lastname ,homeTown , city);
     }
 }
 
 const person2 = {
-    Fname:"nikki",
-    Lname:"Rajbhar",
+    name:'Nikki',
+    lastname:'shah',
+
 }
 
-//  Represent this keyWord 
-const store = person1.FullName.call(person2 , "Mumbai"  , "India")
+// const store = person.Fullname.call(person2 , 'mumbai ' , 'india' )
 
-//  Apply
-// right
-const store1 = person1.FullName.apply(person2 , ["jaypur" , "India"]) 
+const store = person.Fullname.apply(person2 , ['mumbai ' , 'india' ] )
 
-// Wrong
-// const store1 = person1.FullName.apply(person2  ,"Mumbai" , "India") 
+// const store = person.Fullname.bind(person2 , 'mumbai ' , 'india' )
 
-console.log(store1);
+console.log(store);
 
-// Bind
-const store3 = person1.FullName.bind(person2 , "jaypur" , "India") 
 
-console.log(store3());
+const data = [1,2 ,3,4];
+
+const main = data.filter( (data) => {
+        const val = data + 2 
+        return console.log(typeof(val));
+})
+
+const reUse = data.map( (data) =>  data * 2 )
+
+console.log(reUse);
+
