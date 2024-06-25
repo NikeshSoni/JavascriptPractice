@@ -4,7 +4,6 @@
 
 // jab ham ajax call karte hai tab 
 
-
 var store = new Promise ( (res, rej) => {
      return res("I have study right Now ?")
 })

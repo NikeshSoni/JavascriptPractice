@@ -1,8 +1,6 @@
 // object work 
-
-
-
 // quation 1
+
 
 const codeWithMe = {
     name:"Nikesh",
@@ -28,7 +26,6 @@ function data(update = 'nikki') {
 data(changeName)
 
 // quation 2
-
 
 const func = (function (a) {
     delete a;
