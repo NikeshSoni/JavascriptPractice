@@ -7,17 +7,20 @@ function getInputValue(e) {
     }else{
         console.log('Working Code');
     }
+
+    const valuseStoreEmail =  localStorage.setItem(emailData.value , 'email');
+    const valuseStorePass =  localStorage.setItem(emailPass.value , "password");
+
+
+    console.log(localStorage.getItem(emailPass));
     if (localStorage.getItem(emailPass) || localStorage.getItem(emailData)) {
-        // console.log('are you availble');
         alert('complate login')
-        return;
     }else{
         // console.log('you are alredy login');
         alert('you are alredy login')
     }
 
-    const valuseStoreEmail =  localStorage.setItem(emailData.value , 'email');
-    const valuseStorePass =  localStorage.setItem(emailPass.value , "password");
+   
 
     emailData.value = ''
     emailPass.value = ''
